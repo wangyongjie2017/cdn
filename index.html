@@ -34,12 +34,26 @@
     </style>
 </head>
 
-<body>
+<body oncontextmenu=self.event.returnValue=false onselectstart="return false">
     <h1>
         cdn加速
     </h1>
 
 
+
+
+
+
+
+
+    <script>
+        function click() {
+            if (event.button == 2) {
+                alert('本网站欢迎您 !!');
+            }
+        }
+        document.onmousedown = click
+    </script>
     <script src="./js/three.js"></script> <!-- threejs就是使用javascript来写3D程序 -->
     <script src="./js/jquery.js"></script><!-- jquery库 -->
     <script src="./js/jquery.min.js"></script><!-- jquery库(压缩版本) -->
